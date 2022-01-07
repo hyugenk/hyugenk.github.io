@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- my fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/7b95818287.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="checkout.css">
+    <script src="checkout.js"></script>
+
+    <title>Check Out</title>
+  </head>
+  <body>
+<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+        <a class="navbar-brand" href="index.html">CANBAKU</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="ml-auto navbar-nav" >
+            <a class="nav-item nav-link active" href="index.html">Home</a>
+            <a class="nav-item nav-link active" href="a">Features</a>
+            <a class="nav-item nav-link active" href="about.html">About</a>        
+            </div>
+        </div>
+        </div>
+    </nav>
+<!-- Akhir Navbar -->
+
+<!-- JUMBOTRON -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+        <h1 class="display-4">There is No Friend As <span>Loyal</span> as a <span>book</span></h1>
+        <h5 class="lead">Lets pick up your favourite book and start exploring</h5>
+        </div>
+    </div>
+
+<!-- AKHIR JUMBOTRON -->
+    
+<!-- WORKSPACE -->
+    <div class="container-1">
+        <div class="kolom1">
+            <img src="media/bk13.png" alt="">
+        </div>
+
+        <div class="kolom2">
+            <h3>Bidayatul Mujtahid</h3><br>
+            <h4>Ibnu Rusyd</h4>
+            <p>merupakan salah satu buku terbaik yang mengupas tentang fikih muqaranah (atau fikih perbandingan madzhab) buku ini pun senantiasa dijadikan bahan referensi pelajaran di pesantren-pesantren.
+            </p>
+
+            <div class="konfir">
+                <div class="col-75">
+                    <label for="qty">Qty:</label>
+                    <select id="qty" name="qty" onchange="qtyCount();">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                    </select>
+                </div>
+    
+                <button class="open-button" onclick="openForm()">BUY NOW</button>
+            </div>
+            
+            <div class="canImg">
+              <img src="media/canbaku4.png" width="180px" alt="">
+            </div>
+
+            <div class="form-popup" id="myForm">
+              <form class="form-container" name="reg">   
+                  <label for="Alamat"><b>Alamat</b></label>
+                  <input type="text" placeholder="Masukkan Alamat" name="alamat" required>
+
+                  <div class="exped-box">
+                    <fieldset id="group1">
+                      <input type="radio" id="exp" name="jasa1" required>
+                      <label for="jasa">Ajabib</label><br>
+                      <input type="radio" id="exp" name="jasa1" required >
+                      <label for="jasa">JRX</label><br>
+                      <input type="radio" id="exp" name="jasa1" required >
+                      <label for="jasa">FasT</label><br>
+                      <input type="radio" id="exp" name="jasa1" required >
+                      <label for="jasa">SiLambat</label><br>
+                      <input type="radio" id="exp" name="jasa1" required >
+                      <label for="jasa">PosIndo</label><br>
+                      <input type="radio" id="exp" name="jasa1" required >
+                      <label for="jasa">JNex</label><br>
+                      <input type="radio" id="exp" name="jasa1" required >
+                      <label for="jasa">CargOne</label><br>
+                    </fieldset>
+                    
+                  </div>
+                  <fieldset id="group2">
+                    <div class="exped-box2">
+                      <div class="radioNew">
+                      <input type="radio" id="exp" name="jasa2" required >
+                      <label for="jasa2"><img src="media/bri.png" alt=""></label><br>
+                      <input type="radio" id="exp" name="jasa2" required >
+                      <label for="jasa2"><img src="media/bni.png" alt=""></label><br>
+                      <input type="radio" id="exp" name="jasa2" required >
+                      <label for="jasa2"><img src="media/indomaret.png" alt=""></label><br>
+                      <input type="radio" id="exp" name="jasa2" required >
+                      <label for="jasa2"><img src="media/alfamart.png" alt=""></label>
+                      </div>
+                    </div>
+                  </fieldset>
+
+                  <div class="qtyDisplay">
+                    <p>Qty:</p>
+                    <h5 id="demo"></h5>
+                  </div>
+
+                  <button type="submit" class="btn" onclick="thxForm()">Buy</button>
+                  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>   
+
+
+        </div>
+        <div class="kolom3"></div>
+      </div> 
+
+
+      <div class="pop" id="thx">
+        <div class="container-pop">
+          <div class="content-pop">
+            <div class="modalbg">
+              <img src="media/modal.png" alt="">
+            </div>
+            <div class="check"><i class="fas fa-check-circle fa-5x" style="position: absolute; color: rgb(18, 224, 18); margin-top: -200px; margin-left: -40px; border: 4px solid whitesmoke; background-color: whitesmoke; border-radius: 100%;"></i>
+            </div>
+            <h1>THANK YOU</h1>
+            <p>Buku pesanan Anda telah kami proses. Terima kasih telah memilih CANBAKU sebagai mitra Anda.</p>
+            <button type="submit" class="btn1" onclick="openHome()">HOME</button>
+          </div>
+        </div>
+      </div> 
+
+
+
+        
+<!-- AKHIR WORKSPACE -->
+
+
+<!-- Footer -->
+    <!--FOOTER  -->
+    <div class="footer">
+      <div class="col1">
+        <img src="media/canbaku4.png" alt="">
+      </div>
+      
+      <div class="col2">
+        <div class="fotcon">
+          <div class="fotpos">
+            <div class="c1">
+              <h3>COMPANY</h3>
+              <h5>About Us</h5>
+              <h5>Our Service</h5>
+              <h5>Contacts</h5>
+              <h5>Donate</h5>
+            </div>
+          </div>
+
+          <div class="fotpos">
+            <div class="c2">
+              <h3>CONTACT</h3>
+              <h5 style="color: rgb(204, 70, 70);">canbaku@company.com</h5>
+              <h5>+6285987654232</h5><br>
+              <h5 style="letter-spacing: 5px">
+                <a href="https://facebook.com/" class="fab fa-facebook fa-2x" style="color: white;"></a>
+                <a href="https://twitter.com/" class="fab fa-twitter fa-2x" style="color: white;"></a>
+                <a href="https://www.instagram.com/" class="fab fa-instagram fa-2x" style="color: white;"></a>
+                <a href="https://www.youtube.com/" class="fab fa-youtube fa-2x" style="color: white;"></a>
+              </h5>
+
+            </div>
+          </div>
+
+          <div class="fotpos">
+            <div class="c3">
+              <h3>ADDRESS</h3>
+              <h2>Jl. A. Yani, Pabelan,<br> Kec. Kartasura,<br> Kabupaten Sukoharjo,<br> Jawa Tengah <br>57169</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bgf">
+        <h4>Copyright CANBAKU 2021, All Right Reserved<br>
+        Big Thanks to Dr.Eng.Yusuf Sulistyo Nugroho, S.T., M.Eng</h4>
+      </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+  
+  </body>
+</html>

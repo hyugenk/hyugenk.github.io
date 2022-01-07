@@ -1,0 +1,334 @@
+body{
+    background-color: #fafaf1;
+}
+
+/* NAVBAR */
+.navbar-brand {
+    font-family: Viga;
+    font-size: 32px;
+}
+.ml-auto, .mx-auto {
+    margin-left: auto!important;
+}
+
+/* JUMBOTRON */
+.jumbotron {
+    background-image: url(media/header2.png);
+    background-size: cover;
+    height: 250px;
+    text-align: center;
+}
+
+.jumbotron .display-4 {
+    color: white;
+    text-align: center;
+    margin-top: -35px;
+    font-weight: 300;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    font-size: 62px;
+}
+.jumbotron h5 {
+    color: white;
+    text-align: center;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    font-size: 20pxpx;
+}
+
+.jumbotron .display-4 span {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/* NAVBAR DESKTOP VERSION -------------------------------------------*/
+@media (min-width: 992px) {
+
+    .navbar-brand, .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+
+    .jumbotron .display-4 {
+        margin-top: 35px;
+    }
+    .navbar-expand-lg {
+        background-color: rgba(77, 74, 74, 0.2);
+    }
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid blue;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    .jumbotron {
+        margin-top: -75px;
+        height: 250px;
+    }
+}
+
+
+
+/* WORKSPACE */
+.content{
+    width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container1{
+    margin-top: -520px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    width: 1400px;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 1;
+}
+
+.container2{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
+    padding-right: 30px;
+    width: 1400px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container3{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-right: 30px;
+    width: 1400px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box1 {
+    display: flex;
+    padding-left: 40px;
+    padding-right: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    width: 1400px;
+}
+
+.box2{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+    width: 1400px;
+}
+
+.box3 {
+    padding-left: 40px;
+    right: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 100px;
+    justify-content: space-between;
+    width: 1400px;
+}
+
+.box3 h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin-left: -50px;
+}
+
+.box3, .content p{
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 40px;
+    text-align: justify;
+}
+
+.content h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 2px; 
+    text-align: center;
+}
+
+
+
+#Bounce_In{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 2px; 
+    text-align: center;
+    transition-duration: 0.5s;
+}
+#Bounce_In:hover, .Bounce_In:focus, .Bounce_In:active {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+.container1 img{
+    width: 300px;
+}
+.container2 img{
+    width: 400px;
+    margin-left: 30px;
+}
+
+.box1 img:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+
+.box h3{
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    margin-left: 37px;
+}
+
+.box p{
+    margin-top: 30px;
+    margin-right: 40px;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    text-align: justify;
+    margin-left: 60px;
+}
+
+.custom{
+    margin-top: 150px;
+}
+
+
+/* FOOTER ------------------------------------------------------------*/
+.footer {
+    display: flex;
+    background-image: url(media/footer.png);
+    height: 300px;
+    width: auto;
+}
+
+.footer img {
+    width: 180px;
+    height: 180px;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+.col1{
+    display: flex;
+    order: 1;
+    flex: 1;
+}
+.col2{
+    order: 2;
+    flex: 10;
+}
+
+.fotcon{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+
+}
+
+.fotpos{
+    display: flex;
+    direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    order: 1;
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+}
+
+.fotcon h3{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+.fotcon p{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    text-transform: none;
+    line-height: 0.5;
+    color: white;
+
+}
+.c3 p{
+    line-height: 23px;
+}
+
+.bgf{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-top: 250px;
+    background: #000;
+}
+
+.bgf h4{
+    margin-top: 10px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 12px;
+    text-transform: none;
+    color: white;
+}
+
+
+.footer p:hover{
+    padding: 0px 0px 0px 10px;
+    cursor: pointer;
+}
+
+.rf:hover{
+    color: green;
+}
+.lf:hover{
+    color: green;
+}
+
+
+
+
+
+/* FLYER---------------------------------------------- */
