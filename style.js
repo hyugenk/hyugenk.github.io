@@ -10,7 +10,7 @@ function login() {
     console.log(pass)
     salah.style.display = "none";
     if (mail === mailDb && pass === passDb) {
-      location.replace("index.html")
+      location.replace("beranda.html")
     } else{
         salah.style.display = "block";
       }

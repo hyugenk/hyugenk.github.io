@@ -1,505 +1,163 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- my fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
-    
+        
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-    <!-- library link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <script src="https://kit.fontawesome.com/7b95818287.js" crossorigin="anonymous"></script>
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-    <script defer src="script2.js"></script>
-
-    <title>CANBAKU</title>
-  </head>
-  <body>
-<!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light ">
-      <div class="container">
-        <a class="navbar-brand" href="#">CANBAKU</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="ml-auto navbar-nav" >
-            <a class="nav-item nav-link active" href="index.html">Home</a>
-            <a class="nav-item nav-link active" href="https://shopee.co.id" target="_blank">Sponsor</a>
-            <a class="nav-item nav-link active" href="about.html">About</a>
-            <a class="nav-item btn btn-primary tombol3" href="welcomepage.html">join us</a>
+    <title>Canbaku</title>
+    <link rel="stylesheet" href="welcomepage.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+  <!-- login -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-sm">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="modalLabel"><strong>MASUK</strong></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" >
+                  <div class="alert alert-success d-flex align-items-center" role="alert">
+                      <i class="fas fa-info-circle text-warning"></i>
+                      &nbsp; &nbsp;
+                      <div style="font-size: 13px;">
+                          Username &nbsp;: admin<br>
+                          Password &nbsp;&nbsp;: adminpass
+                      </div>
+                  </div>
+                  <div class="mb-3 userpass">
+                      <label for="mailInput" class="form-label">Username</label>
+                      <input type="text" autocomplete="off" class="form-control login-input" id="mailInput"
+                          placeholder="Username Anda">
+                  </div>
+                  <div class="mb-3 userpass">
+                      <label for="passInput" class="col-sm-2 col-form-label">Password</label>
+                      <input type="password" class="form-control login-input" id="passInput" placeholder="Password Anda">
+                  </div>
+              </div>
+              <div class="modal-footer">
+                  <p id="slh" style="padding-right: 90px;display: none; font-size: 15px" class="text-danger animate__animated animate__shakeX salah">Username atau Password Salah!</p>
+                  <button onclick="login()" type="button" class="btn btn-success" id="btnLogin">LOGIN</button>
+              </div>
           </div>
-        </div>
-      </div>
-    </nav>
-<!-- Akhir Navbar -->
-
-<!-- JUMBOTRON -->
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">Lets explore the world</h1>
-        <p class="lead">Book favourite places all over the world and start exploring</p>
       </div>
     </div>
 
-<!-- AKHIR JUMBOTRON -->
+    <!-- header -->
+    <div class="header">
+      <img src="media/canbaku4.png" style="position:absolute;width:50px; margin-left: 100px; margin-top:5px">
+      <h1>CANBAKU</h1>
+    </div>
+    <div class="heading-center">
+      <h1>Lets explore <br>the world</h1>
+      <h3>Book favorite places all over <br>the world and stars exploring</h3>
+      <div class="ps-4 pt-5">
+        <button class="btn btn-outline-danger btn-sm text-center animate__animated animate__heartBeat"
+        type="button" style="padding-left: 20px;padding-right: 20px;margin-left: -25px; margin-bottom: 10px; color: white; background-color: red; width: 250px; height: 50px;font-size:25px; border-radius:15px; box-shadow: 0px 2px 2px 2px" data-bs-toggle="modal" data-bs-target="#loginModal">LOGIN</button>
+      </div>
+    </div>
+</div>
+  </div>
 
-<!-- WORKINGSPACE -->
-    <div class="container-1">
-      <section class="konten">
+ 
+    <div id="login-box">
+        <span class="reg">Register</span>
+      <div class="left-box">
+       
+        <input type="text" class="userpass" name="username" placeholder="Nama lengkap">
+        <input type="text" class="userpass" name="email" placeholder="Email">
+        <input type="password" class="userpass" name="password" placeholder="Password">
+        <input type="password" class="userpass" name="password" placeholder="Re Password">
+        <a href="index.html"><input type="submit" name = "signup-button" value = "Daftar"></a>
+    </div>
 
-        <div class="box">
-          <img src="media/bk1.png" alt="">
-          <section class="star">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-          </section>
-          <font>what i wish i knew when i was 20</font>
-          <p>Tina seelig</p>
-          <a class="nav-item btn btn-success tombol" href="bk1.html">detail</a>
-        </div>   
-
-
-        <div class="box">
-          <img src="media/bk2.png" alt="">
-          <section class="star">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-          </section>
-          <font>The Subtle Art Of Not Giving A F*ck</font>
-          <p>Mark Manson</p>
-          <a class="nav-item btn btn-success tombol" href="bk2.html">detail</a>
-        </div> 
-
-        <div class="box">
-          <img src="media/bk3.png" alt="">
-          <section class="star">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-          </section>
-          <font> to Kill a <br>mockingbird</font>
-          <p>harper lee</p>
-          <a class="nav-item btn btn-success tombol" href="bk3.html">detail</a>
-        </div>  
-
-        <div class="box">
-          <img src="media/bk4.png" alt="">
-          <section class="star">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-          </section>
-          <font>rich dad<br>poor dad</font>
-          <p>robert t. kiyosaki</p>
-          <a class="nav-item btn btn-success tombol" href="bk4.html">detail</a>
-        </div>  
-
-        <div class="box">
-          <img src="media/bk5.png" alt="">
-          <section class="star">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-          </section>
-          <font>the<br>alchemist</font>
-          <p>paulo coelho</p>
-          <a class="nav-item btn btn-success tombol" href="bk5.html">detail</a>
-        </div>  
-
-        <div class="box">
-          <img src="media/bk6.png" alt="">
-          <section class="star">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-          </section>
-          <font>filosofi<br>teras</font>
-          <p>henry manampiring</p>
-          <a class="nav-item btn btn-success tombol" href="bk6.html">detail</a>
-        </div>  
-
-        <div class="box">
-          <img src="media/bk7.png" alt="">
-          <section class="star">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-          </section>
-          <font>negeri<br>5 menara</font>
-          <p>ahmad fuadi</p>
-          <a class="nav-item btn btn-success tombol" href="bk7.html">detail</a>
-        </div>  
-
-        <div class="box">
-          <img src="media/bk8.png" alt="">
-          <section class="star">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-          </section>
-          <font>rantau<br>1 muara</font>
-          <p>ahmad fuadi</p>
-          <a class="nav-item btn btn-success tombol" href="bk8.html">detail</a>
-        </div>  
-
-        <div class="box">
-          <img src="media/bk9.png" alt="">
-          <section class="star">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-          </section>
-          <font>ranah <br> 3 warna</font>
-          <p>ahmad fuadi</p>
-          <a class="nav-item btn btn-success tombol" href="bk9.html">detail</a>
-        </div>  
-
-        <div class="box">
-          <img src="media/bk10.png" alt="">
-          <section class="star">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-          </section>
-          <font>atomic<br>Habits</font>
-          <p>james clear</p>
-          <a class="nav-item btn btn-success tombol" href="bk10.html">detail</a>
-        </div>  
-
-        <div class="box">
-          <img src="media/bk11.png" alt="">
-          <section class="star">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-          </section>
-          <font>mindset<br><br></font>
-          <p>carol s. dweck</p>
-          <a class="nav-item btn btn-success tombol" href="bk11.html">detail</a>
-        </div>  
-
-        <div class="box">
-          <img src="media/bk12.png" alt="">
-          <section class="star">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-          </section>
-          <font>ikigai<br><br></font>
-          <p>h. garcia & f. miralles</p>
-          <a class="nav-item btn btn-success tombol" href="bk12.html">detail</a>
-        </div>  
-
-        <div class="box">
-          <img src="media/bk13.png" alt="">
-          <section class="star">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-          </section>
-          <font>bidayatul mujtahid<br><br></font>
-          <p>ibnu rusyd</p>
-          <a class="nav-item btn btn-success tombol" href="bk13.html">detail</a>
-        </div>  
-
-        <div class="box">
-          <img src="media/bk14.png" alt="">
-          <section class="star">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-          </section>
-          <font>The pschology of money<br><br></font>
-          <p>morgan housel</p>
-          <a class="nav-item btn btn-success tombol" href="bk14.html">detail</a>
-        </div>  
-
-        <div class="box">
-          <img src="media/bk15.png" alt="">
-          <section class="star">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-          </section>
-          <font>sapiens<br><br></font>
-          <p>yuval noah harari</p>
-          <a class="nav-item btn btn-success tombol" href="bk15.html">detail</a>
-        </div>  
-
-        <div class="box">
-          <img src="media/bk16.png" alt="">
-          <section class="star">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-          </section>
-          <font>limitless<br><br></font>
-          <p>jim kwik</p>
-          <a class="nav-item btn btn-success tombol" href="bk16.html">detail</a>
-        </div>  
-
-        <div class="box">
-          <img src="media/bk17.png" alt="">
-          <section class="star">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-          </section>
-          <font>outliers<br><br></font>
-          <p>malcolm gladwell</p>
-          <a class="nav-item btn btn-success tombol" href="bk17.html">detail</a>
-        </div>  
-
-        <div class="box">
-          <img src="media/bk18.png" alt="">
-          <section class="star">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-          </section>
-          <font>letters from a<br>stoic</font>
-          <p>seneca</p>
-          <a class="nav-item btn btn-success tombol" href="bk18.html">detail</a>
-        </div>  
-
-        <div class="box">
-          <img src="media/bk19.png" alt="">
-          <section class="star">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-          </section>
-          <font>the 5 am club<br><br></font>
-          <p>robin sharma</p>
-          <a class="nav-item btn btn-success tombol" href="bk19.html">detail</a>
+    <div class="right-box">
+        <div class="sosmed">
+          <a href="http://facebook.com" target="_blank"><button class="facebook">Datar menggunakan Facebook</button></a>
+          <a href="http://twitter.com" target="_blank"><button class="twitter">Datar menggunakan Twitter</button></a>
+          <a href="https://accounts.google.com/signin/v2/identifier?hl=ID&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank"><button class="google">Daftar menggunakan Google</button></a>
         </div>
+    </div>
 
-        <div class="box">
-          <img src="media/bk20.png" alt="">
-          <section class="star">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-          </section>
-          <font>zero to one<br><br></font>
-          <p>peter thiel</p>
-          <a class="nav-item btn btn-success tombol" href="bk20.html">detail</a>
-        </div>
+    <div class="or"> Atau </div>
 
-        <div class="arrow" style="width: 100%; position: relative; cursor: pointer;" >
-          <div class="lf">
-            <p style="margin-left: 20px;"><b>Previous Page</b></p>
-            <i class="fas fa-chevron-left" style="position: absolute; margin-top: -35px; margin-left: 0px;"></i>
-          </div>
-          <div class="rf">
-            <p style="padding-left: 865px; margin-top: -40px;"><b>Next Page</b></p>
-          <i class="fas fa-chevron-right" style="position: absolute; margin-top: -35px; margin-left: 950px;"></i>
-          </div>
-        </div>
-      </section>
-      
-      <div class="sidebar">
-        <div class="search-box">
-         <div class="search">
-            <input type="text" class="searchTerm" placeholder="What are you looking for?">
-            <a href="a"><button type="submit" class="searchButton">
-              <i class="fa fa-search"></i>
-           </button></a>
-         </div>
-      <h5>GENRES</h5>   
-      </div class=box2>
-        <div class="warna">
-          <p><a href="a">Art</a></p>
-          <p><a href="a">Biography</a></p>
-          <p><a href="a">Business</a></p>
-          <p><a href="a">Classics</a></p>
-          <p><a href="a">Comedy</a></p>
-          <p><a href="a">Comics</a></p>
-          <p><a href="a">Cinematography</a></p>
-          <p><a href="a">Cook Book</a></p>
-          <p><a href="a">Crime</a></p>
-          <p><a href="a">Ebooks</a></p>
-          <p><a href="a">Fancy</a></p>
-          <p><a href="a">Fiction</a></p>
-          <p><a href="a">Graphics</a></p>
-          <p><a href="a">Historical</a></p>
-          <p><a href="a">Historical Fiction</a></p>
-          <p><a href="a">Horror</a></p>
-          <p><a href="a">Manga</a></p>
-          <p><a href="a">Memoir</a></p>
-          <p><a href="a">Religion</a></p>
-          
-          
+
+     
+    <h2 class="typewrite text-white" data-period="2000" data-type='[ "Selamat Datang Di Canbaku","Temukan Buku Impian Disini" ]'>
+        <span class="wrap">Hello, World!.</span>
+    </h2>
+    <script>
+        var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+        };
         
+        TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+        
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+        
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+        
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+        
+        if (this.isDeleting) { delta /= 2; }
+        
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+        
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+        };
+        
+        window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-type');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+        new TxtType(elements[i], JSON.parse(toRotate), period);
+        }
+        }
+        
+        
+        };
+    </script>
+    
+    <Script type="text/javascript" src="style.js"></Script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-        <div class="slideshow-container">
-          <div class="mySlides fade">
-            <img src="media/ad1.png" style="width:100%">
-          </div>
-          <div class="mySlides fade">
-            <img src="media/ad3.png" style="width:100%">
-          </div>
-          <div class="mySlides fade">
-            <img src="media/ad2.png" style="width:100%">
-          </div>
-          </div>
-          <br>
-          <div style="text-align:center">
-            <span class="dot"></span> 
-            <span class="dot"></span> 
-            <span class="dot"></span> 
-          </div>
-        </div>
-
-<!-- SLIDER JS  -->
-          <script>
-          var slideIndex = 0;
-          showSlides();
-          
-          function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}    
-            for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-            setTimeout(showSlides, 1000);
-          }
-          </script>
-          
-      </div>
-
-      
-
-    </div>
-
-
-    <!--FOOTER  -->
-    <div class="footer">
-      <div class="col1">
-        <img src="media/canbaku4.png" alt="">
-      </div>
-      
-      <div class="col2">
-        <div class="fotcon">
-          <div class="fotpos">
-            <div class="c1">
-              <h3>COMPANY</h3>
-              <p>About Us</p>
-              <p>Our Service</p>
-              <p>Contacts</p>
-              <p>Donate</p>
-            </div>
-          </div>
-
-          <div class="fotpos">
-            <div class="c2">
-              <h3>CONTACT</h3>
-              <p style="color: rgb(204, 70, 70);">canbaku@company.com</p>
-              <p>+6285987654232</p><br>
-              <p style="letter-spacing: 5px">
-                <a href="https://facebook.com/" class="fab fa-facebook fa-2x" style="color: white;"></a>
-                <a href="https://twitter.com/" class="fab fa-twitter fa-2x" style="color: white;"></a>
-                <a href="https://www.instagram.com/" class="fab fa-instagram fa-2x" style="color: white;"></a>
-                <a href="https://www.youtube.com/" class="fab fa-youtube fa-2x" style="color: white;"></a>
-              </p>
-
-            </div>
-          </div>
-
-          <div class="fotpos">
-            <div class="c3">
-              <h3>ADDRESS</h3>
-              <p>Jl. A. Yani, Pabelan,<br> Kec. Kartasura,<br> Kabupaten Sukoharjo,<br> Jawa Tengah <br>57169</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bgf">
-        <h4>Copyright CANBAKU 2021, All Right Reserved<br>
-        Big Thanks to Dr.Eng.Yusuf Sulistyo Nugroho, S.T., M.Eng</h4>
-      </div>
-    </div>
-
-<!-- AKHIR WORKINGSPACE -->
-
-<!-- BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-
-  </body>
+</body>
 </html>
