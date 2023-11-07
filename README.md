@@ -5,4 +5,4 @@ Kelompok :
 2. Ahmat Zainul
 3. Faza Risqy
 
-Link hyugenk.github.io
+Link --> [Canbaku](hyugenk.github.io)
