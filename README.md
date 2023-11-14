@@ -5,4 +5,6 @@ Kelompok :
 2. Ahmat Zainul Muttaqin
 3. Faza Risqy Ress
 
+Dosen : Yusuf Sulistyo
+
 Link --> [Canbaku](hyugenk.github.io)
