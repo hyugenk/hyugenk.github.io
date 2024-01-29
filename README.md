@@ -3,7 +3,7 @@
 #### Kelompok :
 1. Hyuga Dewanto Kojyro
 2. Ahmat Zainul Muttaqin
-3. Faza Risqy Resw
+3. Faza Risqy Res
 
 Dosen : Dr.Eng.Yusuf Sulistyo Nugroho, S.T., M.Eng
 
